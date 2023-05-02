@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Api</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .section_route{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            background-color: #0d1117;
+            color: white;
+        }
+        .code_space{
+            display: inline;
+            color: white;
+            background-color: rgba(110,118,129,0.4);
+            height: 40px;
+            width: 500px;
+            border-radius: 10px;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Net api</h1>
+        <span>Documentação</span>
+    </header>
+    <main>
+        <h3>
+            Essa api serve para pegar os IP do endereço informado em url e também para pegar os nameservers, estarei mostrando as rotas logo abaixo
+        </h3>
+        <section class="section_route">
+            <h4>Rota get-ip</h4>
+            <span>
+                Para utilizar essa rota deve se informar o endereço url utilizando a query url e com o endereço informado entre aspas simples 
+            </span>
+            <code class="code_space">
+                https://pegar-ip-api.com/v1/get-ip?url='google.com.br'
+            </code>
+        </section>
+        <section class="section_route">
+            <h4>Rota get-nameservers</h4>
+            <span>
+                Para utilizar essa rota deve se informar o endereço url utilizando a query url e com o endereço informado entre aspas simples
+            </span>
+            <code class="code_space">
+                https://pegar-ip-api.com/v1/get-nameservers?url='google.com.br'
+            </code>
+        </section>
+    </main>
+</body>
+</html>
